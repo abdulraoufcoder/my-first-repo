@@ -1,4 +1,4 @@
-<h1>
+<!-- <h1>
   This is my {{title}}
 </h1>
 
@@ -23,4 +23,27 @@
   <input type="text" placeholder="Email">
   <input type="password" class="{{isPasswordValid ? '':'border-red'}}" placeholder="Password">
   <button class="">{{isAuthenticated ? 'Login':'Signup'}}</button>
-</form>
+</form> -->
+
+
+<div class="header">
+  <!-- This is working as a separate div -->
+  <!-- <app-header></app-header> -->
+</div>
+
+
+<!-- <app-header></app-header> -->
+
+<div class="flex">
+  <button (click)="changeDepartment('student')">Student</button>
+  <button (click)="changeDepartment('teacher')">Teacher</button>
+</div>
+
+
+<div *ngIf="activeDepartment == 'student'">
+  <app-student-dashboard></app-student-dashboard>
+</div>
+
+<div *ngIf="activeDepartment == 'teacher'">
+  <app-teacher-dashboard></app-teacher-dashboard>
+</div>

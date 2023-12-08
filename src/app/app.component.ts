@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+  // MODULING LEARNING
+  activeDepartment: string = 'student';
+
+
+
+  changeDepartment(department: string){
+    this.activeDepartment = department
+  }
+
+
+
+  //====================================
   title = 'Application-of-Angular';
 
   isPasswordValid: boolean = true;
