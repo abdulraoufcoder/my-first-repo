@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
+import { Login } from './shared/models/login';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
+  // 12/11/2023
+  imgUrl: string = 'https://picsum.photos/id/100/500/500'
+  changeImage(url:string){
+    this.imgUrl = url
+  }
+
+  nameInputVar: string = ''
+  getInput(value){
+    this.nameInputVar = value    
+  }
+
   // MODULING LEARNING
+  objValue: string = ''
+  obj: Login;
+  submitForm(form:any){
+    this.obj = {
+      email: form.email.value,
+      password: form.password.value
+    }   
+    console.log(this.obj); 
+    this.print(this.obj)
+  }
+
+  print(obj:Login){
+    this.objValue = `The student email is ${obj.email} and the student password is ${obj.password}`
+  }
+
   activeDepartment: string = 'student';
 
 
+  inputValue : string = ''
+  inputSubmit(input:any){
+    this.inputValue = input.value        
+  }
 
   changeDepartment(department: string){
     this.activeDepartment = department

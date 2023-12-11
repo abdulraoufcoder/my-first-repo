@@ -34,7 +34,7 @@
 
 <!-- <app-header></app-header> -->
 
-<div class="flex">
+<!-- <div class="flex">
   <button (click)="changeDepartment('student')">Student</button>
   <button (click)="changeDepartment('teacher')">Teacher</button>
 </div>
@@ -46,4 +46,49 @@
 
 <div *ngIf="activeDepartment == 'teacher'">
   <app-teacher-dashboard></app-teacher-dashboard>
+</div> -->
+
+
+<!-- 12/11/2023 -->
+
+<br><br>
+
+<input type="text" #inputText>
+<button (click)="inputSubmit(inputText)">Submit</button>
+<h1>{{inputValue}}</h1>
+
+<br><br>
+
+<div class="form">
+  <form action="" #formElement>
+    <div>
+      <label for="">Email</label>
+      <input type="text" placeholder="Email" name="email">
+    </div>
+    <div>
+      <label for="">Password</label>
+      <input type="password" placeholder="Email" name="password">
+    </div>
+  </form>
+</div>
+
+<br>
+<button (click)="submitForm(formElement)">Submit Form</button>
+
+
+<h1>
+  {{objValue}}
+</h1>
+
+<hr>
+
+<input type="text" #name (input)="getInput(name.value)">
+<h1>{{nameInputVar}}</h1>
+
+
+<hr>
+<input type="text" #url>
+<button (click)="changeImage(url.value)">Change Image</button>
+<div class="img">
+  <img [src]="imgUrl" alt="" class="image">
 </div>
