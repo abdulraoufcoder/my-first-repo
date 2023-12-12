@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
   // MODULING LEARNING
   objValue: string = ''
-  obj: Login;
+  obj!: Login;
   submitForm(form:any){
     this.obj = {
       email: form.email.value,

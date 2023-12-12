@@ -1,0 +1,68 @@
+<h1>If else</h1>
+
+<!-- <div *ngIf="isAuthenticated == false">
+    <h1>User not Found</h1>
+</div>
+
+<div *ngIf="isAuthenticated == true">
+    <h1>User Found Successfully</h1>
+</div> -->
+
+
+<!-- !true = false -->
+<!-- !false = true -->
+<!-- <div *ngIf="!isAuthenticated">
+    <h1>User not Found</h1>
+</div>
+
+<div *ngIf="isAuthenticated">
+    <h1>User Found Successfully</h1>
+</div> -->
+
+<div *ngIf="!isAuthenticated else elseBlock">
+    <h1>User Found Successfully</h1>
+</div>
+
+<!-- <div *ngIf="!isAuthenticated" #elseBlock>
+    <h1>User not Found</h1>
+</div> -->
+
+<ng-template #elseBlock>
+    <h1>User not Found</h1>
+</ng-template>
+
+
+<div [ngSwitch]="season">
+    <h1 *ngSwitchCase="'winter'">The season is winter</h1>
+    <h1 *ngSwitchCase="'spring'">The season is spring</h1>
+    <h1 *ngSwitchCase="'autumn'">The season is autumn</h1>
+    <h1 *ngSwitchCase="'summer'">The season is summer</h1>
+</div>
+
+<div [ngSwitch]="inputType.type">
+
+    <!-- TEXT -->
+    <div *ngSwitchCase="'text'">
+        <label for="">{{inputType.label}}</label><br>
+        <input type="{{inputType.type}}" [placeholder]="inputType.placeholder">
+    </div>
+
+    <!-- DATE -->
+    <div *ngSwitchCase="'date'">
+        <label for="">{{inputType.label}}</label><br>
+        <input type="{{inputType.type}}" [placeholder]="inputType.placeholder">
+    </div>
+
+    <!-- SELECT -->
+    <div *ngSwitchCase="'select'">
+        <select name="" id="">
+            <option value="">Value 1</option>
+            <option value="">Value 2</option>
+            <option value="">Value 3</option>
+        </select>
+    </div>
+
+    <div *ngSwitchDefault="">
+        <h1>DEFAULT</h1>
+    </div>
+</div>
