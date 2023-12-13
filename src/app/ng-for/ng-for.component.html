@@ -1,0 +1,35 @@
+<h1>NG FOR</h1>
+
+<button (click)="printArray()">Print Array</button>
+
+
+<ul>
+    <!-- <li>{{nums[0]}}</li>
+        <li>{{nums[1]}}</li>
+        <li>{{nums[2]}}</li> -->
+
+
+
+        <li *ngFor="let number of nums">{{number}}</li>
+        <!-- nums[0] -->
+        <!-- nums[1] -->
+        <!-- nums[2] -->
+</ul>
+
+
+<div>
+    <!-- names[0] -->
+    <h3 *ngFor="let name of names;let i = index">{{(i + 1) + ((pageNumber - 1) * pageSize)}} {{name}}</h3>
+</div>
+
+
+<br><br>
+
+<div>
+    <div *ngFor="let adType of nestedArr">
+        <h1>{{adType.name}}</h1>
+        <ul>
+            <li *ngFor="let item of adType.items">{{item}}</li>
+        </ul>
+    </div>
+</div>
