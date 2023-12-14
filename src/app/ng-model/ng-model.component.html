@@ -1,0 +1,20 @@
+<h1>Ng Model</h1>
+
+
+<!-- <input type="text" #input>
+<input type="text" #input2> -->
+
+
+<!-- it will throw error if formModule is not imported in app.module.ts or the specified module -->
+
+<form action="" #myForm="ngForm" (ngSubmit)="submit()">
+    <input type="text" [(ngModel)]="user.name" name="name" placeholder="Name">
+    <input type="text" [(ngModel)]="user.age" name="age" placeholder="Age">
+    <input type="text" [(ngModel)]="user.profession" name="profession" placeholder="Profession">
+    
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- <button (click)="submit()">Submit</button> -->
+<button (click)="editProfile()">Edit Profile</button>

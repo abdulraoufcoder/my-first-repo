@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NgForComponent {
 
+  user: {} = {
+    name: 'Raouf',
+    age: 20,
+    profession: 'Developer'
+  }
+
   nums: any = [
     1, 2, 3, 4, 5, 6
   ]
