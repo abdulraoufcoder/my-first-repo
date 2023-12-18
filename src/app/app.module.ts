@@ -9,6 +9,12 @@ import { IfElseComponent } from './if-else/if-else.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgModelComponent } from './ng-model/ng-model.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { NgOtpInputModule } from 'ng-otp-input';
 
 @NgModule({
   declarations: [
@@ -16,13 +22,19 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     IfElseComponent,
     NgForComponent,
-    NgModelComponent
+    NgModelComponent,
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     StudentModule,
     TeacherModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
