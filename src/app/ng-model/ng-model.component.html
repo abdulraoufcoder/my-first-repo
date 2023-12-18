@@ -8,11 +8,12 @@
 <!-- it will throw error if formModule is not imported in app.module.ts or the specified module -->
 
 <form action="" #myForm="ngForm" (ngSubmit)="submit()">
-    <input type="text" [(ngModel)]="user.name" name="name" placeholder="Name">
-    <input type="text" [(ngModel)]="user.age" name="age" placeholder="Age">
-    <input type="text" [(ngModel)]="user.profession" name="profession" placeholder="Profession">
-    
-    <button type="submit">Submit</button>
+    <input type="text" [(ngModel)]="user.name" name="name" placeholder="Name" required minlength="4">
+    <input type="number" [(ngModel)]="user.age" name="age" placeholder="Age" required [min]="18">
+    <input type="text" [(ngModel)]="user.profession" name="profession" placeholder="Profession" required>
+    <input type="date" [(ngModel)]="user.dob" name="dob" required>
+
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
 </form>
 
 

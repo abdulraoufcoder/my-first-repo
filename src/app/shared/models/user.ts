@@ -1,5 +1,6 @@
 export class User {
     name: string = '';
     age: string = '';
-    profession: string = ''
+    profession: string = '';
+    dob: string = '';
 }

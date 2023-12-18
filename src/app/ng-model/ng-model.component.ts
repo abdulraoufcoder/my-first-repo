@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { User } from '../shared/models/user';
+import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -22,23 +23,24 @@ export class NgModelComponent {
   // @ViewChild('input') input;
   // @ViewChild('input2') input2;
 
-  submit(){
+  submit() {
+    alert("Form submitted successfully");
     // console.log(this.input.nativeElement.value);   
     // console.log(this.input2.nativeElement.value);   
-     
+
     // console.log(this.user);
     // console.log(this.user);
 
-    
-    
-    
+
+
+
   }
 
-  editProfile(){
+  editProfile() {
     setTimeout(() => {
       this.user.name = "Raouf";
       this.user.age = '22',
-      this.user.profession = "Development"
+        this.user.profession = "Development"
     }, 3000);
   }
 }
