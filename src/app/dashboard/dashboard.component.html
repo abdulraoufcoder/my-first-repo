@@ -1,1 +1,17 @@
-<button routerLink="/abdulraoufisteaching">Login</button>
+<!-- <button routerLink="/login">Login</button> -->
+
+
+<button (click)="routeToLogin()">Login</button>
+
+<ul>
+    <!-- /details/3 -->
+    <li *ngFor="let item of arr" routerLink="/details/{{item.id}}"><button>{{item.name}}</button></li>
+</ul>
+
+<br><br>
+
+<h1>Query Parameters</h1>
+<ul>
+    <li><button (click)="routeToStudent(true)">Data with params</button></li>
+    <li><button (click)="routeToStudent(false)">Data without params</button></li>
+</ul>

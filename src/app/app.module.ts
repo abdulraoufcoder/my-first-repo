@@ -15,6 +15,9 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NgOtpInputModule } from 'ng-otp-input';
+import { StudentComponent } from './roles/student/student.component';
+import { TeacherComponent } from './roles/teacher/teacher.component';
+import { ItemDetailsComponent } from './item-details/item-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { NgOtpInputModule } from 'ng-otp-input';
     LoginComponent,
     SignupComponent,
     DashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    StudentComponent,
+    TeacherComponent,
+    ItemDetailsComponent
   ],
   imports: [
     BrowserModule,
