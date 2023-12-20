@@ -53,7 +53,7 @@ const routes: Routes = [
     },
     {
         // PARAMETER can be of any name
-        path: 'details/:id',
+        path: 'details/:id/:slug',
         component: ItemDetailsComponent,
         title: 'Car Details'
     },
