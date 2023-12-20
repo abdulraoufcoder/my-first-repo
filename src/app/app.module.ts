@@ -18,6 +18,9 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { StudentComponent } from './roles/student/student.component';
 import { TeacherComponent } from './roles/teacher/teacher.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { RegisterComponent } from './roles/student/register/register.component';
+import { ResultComponent } from './roles/student/result/result.component';
+import { DegreeComponent } from './roles/student/degree/degree.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
     NotFoundComponent,
     StudentComponent,
     TeacherComponent,
-    ItemDetailsComponent
+    ItemDetailsComponent,
+    RegisterComponent,
+    ResultComponent,
+    DegreeComponent
   ],
   imports: [
     BrowserModule,

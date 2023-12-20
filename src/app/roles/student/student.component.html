@@ -1,1 +1,12 @@
 <p>student works!</p>
+
+<button>REGISTER FORM</button>
+<button>RESULTS</button>
+<button>Degree</button>
+
+
+<h1 *ngIf="current == 'register'">REGISTER FORM</h1>
+<h1 *ngIf="current == 'result'">RESULTS</h1>
+<h1 *ngIf="current == 'degree'">DEGREE</h1>
+
+<router-outlet></router-outlet>
