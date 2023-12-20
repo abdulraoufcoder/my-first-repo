@@ -1,8 +1,6 @@
 <h1>signup works!</h1>
 <br>
 
-<ng-otp-input   (onInputChange)="onOtpChange($event)"  [config]="{length:5, disableAutoFocus:true}"></ng-otp-input>
-
-or 
+<ng-otp-input (onInputChange)="onOtpChange($event)"  [config]="{length:5, disableAutoFocus:true,allowNumbersOnly:true}"></ng-otp-input>
 
 <!-- <ng-otp-input  [formCtrl]=""  [config]="{length:5}"></ng-otp-input> -->

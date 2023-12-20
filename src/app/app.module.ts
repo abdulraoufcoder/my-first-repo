@@ -21,6 +21,7 @@ import { ItemDetailsComponent } from './item-details/item-details.component';
 import { RegisterComponent } from './roles/student/register/register.component';
 import { ResultComponent } from './roles/student/result/result.component';
 import { DegreeComponent } from './roles/student/degree/degree.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { DegreeComponent } from './roles/student/degree/degree.component';
     TeacherModule,
     FormsModule,
     AppRoutingModule,
-    NgOtpInputModule
+    NgOtpInputModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

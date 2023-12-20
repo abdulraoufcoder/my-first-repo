@@ -1,17 +1,20 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+// const countryCodes = require('country-codes-list')
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
+
+
 export class DashboardComponent {
+
 
   constructor(
     private router: Router
   ){
-
+ 
   }
 
   routeToLogin(){
@@ -37,4 +40,6 @@ export class DashboardComponent {
     this.router.navigate(['/student'], {queryParams: {isGraduated: true}})
     // student?name=Raouf
   }
+
+
 }
