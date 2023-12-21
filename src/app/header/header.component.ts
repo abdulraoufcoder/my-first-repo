@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  navItems = [
+    {
+      title: 'LifeCycle Hooks',
+      path: '/lifecycle-hooks'
+    },
+    {
+      title: 'Student',
+      path: '/student'
+    }
+  ]
+  
 }

@@ -1,1 +1,3 @@
-<h2>Header contentn Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, laboriosam.</h2>
+<ul>
+   <li *ngFor="let item of navItems"><button routerLink="{{item.path}}" routerLinkActive="current-route">{{item.title}}</button></li> 
+</ul>

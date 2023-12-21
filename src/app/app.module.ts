@@ -22,6 +22,7 @@ import { RegisterComponent } from './roles/student/register/register.component';
 import { ResultComponent } from './roles/student/result/result.component';
 import { DegreeComponent } from './roles/student/degree/degree.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     ItemDetailsComponent,
     RegisterComponent,
     ResultComponent,
-    DegreeComponent
+    DegreeComponent,
+    LifecycleHooksComponent
   ],
   imports: [
     BrowserModule,

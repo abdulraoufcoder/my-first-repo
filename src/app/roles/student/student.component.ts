@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, ActivationEnd } from '@angular/router';
+import { UtilityService } from 'src/app/services/utility.service';
 
 @Component({
   selector: 'app-student',
@@ -10,10 +11,13 @@ export class StudentComponent {
 
   current: string = 'result'
 
-  constructor(private activeRoute: ActivatedRoute) {
-    console.clear()
-    console.log("Student page Loaded");
-
+  constructor(
+    private activeRoute: ActivatedRoute,
+    public utility: UtilityService
+    ) {
+    // console.clear()
+    // console.log("Student page Loaded");
+      this.utility.print()
     this.activeRoute.queryParams.subscribe((qparams: any) => {
       console.log(qparams);
 
@@ -22,6 +26,10 @@ export class StudentComponent {
     this.activeRoute.data.subscribe((res) => {
       console.log(res);
     })
+  }
+
+  takeWork(){
+    this.utility.name = "I am tired"
   }
 
   imageObject: Array<object> = [

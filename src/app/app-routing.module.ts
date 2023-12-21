@@ -10,12 +10,16 @@ import { ItemDetailsComponent } from "./item-details/item-details.component";
 import { RegisterComponent } from "./roles/student/register/register.component";
 import { ResultComponent } from "./roles/student/result/result.component";
 import { DegreeComponent } from "./roles/student/degree/degree.component";
+import { LifecycleHooksComponent } from "./lifecycle-hooks/lifecycle-hooks.component";
 
 const routes: Routes = [
-
     {
         path: '',
         component: DashboardComponent,
+    },
+    {
+        path: 'lifecycle-hooks',
+        component: LifecycleHooksComponent
     },
     {
         path: 'login',
