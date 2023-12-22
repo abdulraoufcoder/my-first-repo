@@ -11,6 +11,7 @@ import { RegisterComponent } from "./roles/student/register/register.component";
 import { ResultComponent } from "./roles/student/result/result.component";
 import { DegreeComponent } from "./roles/student/degree/degree.component";
 import { LifecycleHooksComponent } from "./lifecycle-hooks/lifecycle-hooks.component";
+import { HttpClientComponent } from "./http-client/http-client.component";
 
 const routes: Routes = [
     {
@@ -29,6 +30,10 @@ const routes: Routes = [
     {
         path: 'signup',
         component: SignupComponent,
+    },
+    {
+        path: 'http',
+        component: HttpClientComponent
     },
     {
         // student/anything

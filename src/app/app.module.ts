@@ -23,6 +23,8 @@ import { ResultComponent } from './roles/student/result/result.component';
 import { DegreeComponent } from './roles/student/degree/degree.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { HttpClientComponent } from './http-client/http-client.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     RegisterComponent,
     ResultComponent,
     DegreeComponent,
-    LifecycleHooksComponent
+    LifecycleHooksComponent,
+    HttpClientComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
     FormsModule,
     AppRoutingModule,
     NgOtpInputModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
