@@ -1,0 +1,21 @@
+
+<h1>{{'asfasdfk' | titlecase}}</h1>
+
+<br><br>
+
+<h1>{{date | date : 'shortDate'}}</h1>
+<h1>{{date | date : 'shortTime'}}</h1>
+{{date | date:'short':timeZone}}
+
+
+<br><br>
+
+<select name="" id="" (change)="valueSelected(selectBox.value)" #selectBox>
+    <option value="{{opt.value}}" *ngFor="let opt of arr2">{{opt.title}}</option>
+</select>
+
+<br><br>
+
+<select name="" id="" (change)="valueSelected(selectBox2.value)" #selectBox2>
+    <option value="{{opt}}" *ngFor="let opt of arr">{{opt | stringSeparator | titlecase}}</option>
+</select>

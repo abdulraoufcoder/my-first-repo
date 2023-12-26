@@ -25,6 +25,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
 import { HttpClientComponent } from './http-client/http-client.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PipeComponent } from './pipe/pipe.component';
+import { StringSeparatorPipe } from './shared/pipes/string-separator.pipe';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { HttpClientModule } from '@angular/common/http';
     ResultComponent,
     DegreeComponent,
     LifecycleHooksComponent,
-    HttpClientComponent
+    HttpClientComponent,
+    PipeComponent,
+    StringSeparatorPipe,
   ],
   imports: [
     BrowserModule,

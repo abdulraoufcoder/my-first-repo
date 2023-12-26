@@ -15,6 +15,10 @@ export class HeaderComponent {
     {
       title: 'Student',
       path: '/student'
+    },
+    {
+      title: 'Pipe',
+      path: '/pipe'
     }
   ]
   
