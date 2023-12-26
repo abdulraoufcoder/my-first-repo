@@ -27,6 +27,7 @@ import { HttpClientComponent } from './http-client/http-client.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PipeComponent } from './pipe/pipe.component';
 import { StringSeparatorPipe } from './shared/pipes/string-separator.pipe';
+import { SlicePipe } from './shared/pipes/slice.pipe';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { StringSeparatorPipe } from './shared/pipes/string-separator.pipe';
     HttpClientComponent,
     PipeComponent,
     StringSeparatorPipe,
+    SlicePipe,
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@
 <br><br>
 
 <select name="" id="" (change)="valueSelected(selectBox.value)" #selectBox>
-    <option value="{{opt.value}}" *ngFor="let opt of arr2">{{opt.title}}</option>
+    <option value="{{opt.value}}" *ngFor="let opt of arr2 | slice">{{opt.title}}</option>
 </select>
 
 <br><br>

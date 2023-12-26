@@ -29,6 +29,30 @@ export class PipeComponent {
     {
       title: 'Ali Hassan',
       value: 'ali_hassan'
+    },
+    {
+      title: 'Test on Way',
+      value: 'test_on_way'
+    },
+    {
+      title: 'Patient Records',
+      value: 'patient_record'
+    },
+    {
+      title: 'Ali Hassan',
+      value: 'ali_hassan'
+    },
+    {
+      title: 'Test on Way',
+      value: 'test_on_way'
+    },
+    {
+      title: 'Patient Records',
+      value: 'patient_record'
+    },
+    {
+      title: 'Ali Hassan',
+      value: 'ali_hassan'
     }
   ]
 
