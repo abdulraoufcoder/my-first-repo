@@ -19,3 +19,21 @@
 <select name="" id="" (change)="valueSelected(selectBox2.value)" #selectBox2>
     <option value="{{opt}}" *ngFor="let opt of arr">{{opt | stringSeparator | titlecase}}</option>
 </select>
+
+<br><br>
+
+<h1>{{'246546334' | comma}}</h1>
+
+
+<input type="text" [(ngModel)]="searchValue">
+<table>
+    <tr *ngFor="let item of arr2 | search: searchValue ">
+    <td  style="padding-block: 0.25em;">{{item.title}}</td>
+    <td  style="padding-block: 0.25em;">{{item.value}}</td>
+    </tr>
+</table>
+
+
+
+<textarea name="" [(ngModel)]="textarea" id="" cols="30" rows="10"></textarea>
+{{textarea}}

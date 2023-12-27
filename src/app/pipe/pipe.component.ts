@@ -60,4 +60,7 @@ export class PipeComponent {
     console.log(value);
     
   }
+
+  searchValue: string = '';
+  textarea: string = ''
 }

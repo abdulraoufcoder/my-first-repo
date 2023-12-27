@@ -28,6 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { PipeComponent } from './pipe/pipe.component';
 import { StringSeparatorPipe } from './shared/pipes/string-separator.pipe';
 import { SlicePipe } from './shared/pipes/slice.pipe';
+import { CommaPipe } from './shared/pipes/comma.pipe';
+import { DecimalPipe } from '@angular/common';
+import { SearchPipe } from './shared/pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -51,6 +54,8 @@ import { SlicePipe } from './shared/pipes/slice.pipe';
     PipeComponent,
     StringSeparatorPipe,
     SlicePipe,
+    CommaPipe,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,9 @@ import { SlicePipe } from './shared/pipes/slice.pipe';
     NgImageSliderModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DecimalPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
