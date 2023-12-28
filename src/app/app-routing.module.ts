@@ -13,6 +13,7 @@ import { DegreeComponent } from "./roles/student/degree/degree.component";
 import { LifecycleHooksComponent } from "./lifecycle-hooks/lifecycle-hooks.component";
 import { HttpClientComponent } from "./http-client/http-client.component";
 import { PipeComponent } from "./pipe/pipe.component";
+import { DiretiveComponent } from "./diretive/diretive.component";
 
 const routes: Routes = [
     {
@@ -26,6 +27,10 @@ const routes: Routes = [
     {
         path: 'pipe',
         component: PipeComponent
+    },
+    {
+        path: 'directive',
+        component: DiretiveComponent
     },
     {
         path: 'login',

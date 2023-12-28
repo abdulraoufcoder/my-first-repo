@@ -19,6 +19,10 @@ export class HeaderComponent {
     {
       title: 'Pipe',
       path: '/pipe'
+    },
+    {
+      title: 'Directive',
+      path: '/directive'
     }
   ]
   

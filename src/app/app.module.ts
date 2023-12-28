@@ -31,6 +31,7 @@ import { SlicePipe } from './shared/pipes/slice.pipe';
 import { CommaPipe } from './shared/pipes/comma.pipe';
 import { DecimalPipe } from '@angular/common';
 import { SearchPipe } from './shared/pipes/search.pipe';
+import { DiretiveComponent } from './diretive/diretive.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { SearchPipe } from './shared/pipes/search.pipe';
     SlicePipe,
     CommaPipe,
     SearchPipe,
+    DiretiveComponent,
   ],
   imports: [
     BrowserModule,
