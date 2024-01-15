@@ -1,0 +1,18 @@
+<h1>Array Methods</h1>
+
+<h1>{{variable}}</h1>
+
+<h1 *ngIf="!newArr.length">No item found</h1>
+
+<br><br><hr>
+<ul>
+    <li *ngFor="let item of newArr"><h1>{{item}}</h1></li>
+</ul>
+
+<button (click)="count = count + 1; newArr.push(count)">Push</button>
+<button (click)="newArr.pop()">Pop</button>
+<button (click)="count = count + 1; newArr.unshift(count)">Unshift</button>
+<button (click)="newArr.shift()">Shift</button>
+
+<button (click)="newArr = newArr.slice(2,2)">Slice</button>
+<button (click)="newArr.splice(2,1)">Splice</button>

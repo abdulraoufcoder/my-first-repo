@@ -32,6 +32,8 @@ import { CommaPipe } from './shared/pipes/comma.pipe';
 import { DecimalPipe } from '@angular/common';
 import { SearchPipe } from './shared/pipes/search.pipe';
 import { DiretiveComponent } from './diretive/diretive.component';
+import { GridComponent } from './grid/grid.component';
+import { ArrayMethodsComponent } from './array-methods/array-methods.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { DiretiveComponent } from './diretive/diretive.component';
     CommaPipe,
     SearchPipe,
     DiretiveComponent,
+    GridComponent,
+    ArrayMethodsComponent,
   ],
   imports: [
     BrowserModule,

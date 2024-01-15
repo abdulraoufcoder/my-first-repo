@@ -14,8 +14,11 @@ import { LifecycleHooksComponent } from "./lifecycle-hooks/lifecycle-hooks.compo
 import { HttpClientComponent } from "./http-client/http-client.component";
 import { PipeComponent } from "./pipe/pipe.component";
 import { DiretiveComponent } from "./diretive/diretive.component";
+import { GridComponent } from "./grid/grid.component";
+import { ArrayMethodsComponent } from "./array-methods/array-methods.component";
+import { routes } from "./shared/uitlities/routes";
 
-const routes: Routes = [
+const routesPaths: Routes = [
     {
         path: '',
         component: DashboardComponent,
@@ -44,6 +47,15 @@ const routes: Routes = [
     {
         path: 'http',
         component: HttpClientComponent
+    },
+    {
+        path: 'grid',
+        component: GridComponent
+    },
+    {
+        title: routes.array_methods.title,
+        path: routes.array_methods.path,
+        component: ArrayMethodsComponent
     },
     {
         // student/anything
@@ -83,7 +95,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routesPaths)],
     exports: [RouterModule]
 })
 
