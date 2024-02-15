@@ -1,15 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pipe',
   templateUrl: './pipe.component.html',
   styleUrls: ['./pipe.component.scss']
 })
-export class PipeComponent {
+export class PipeComponent implements OnInit{
 
   date = new Date();
 
   timeZone:string = 'GMT+5'
+
+
+
+  jsonObj : any = {
+    title: "String",
+    num: 12
+  }
+
+  ngOnInit(): void {
+    setInterval(()=>{
+      this.date = new Date()
+    },1000)
+  }
 
   arr = [
     'test_on_way',

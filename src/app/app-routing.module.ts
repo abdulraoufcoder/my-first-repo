@@ -17,6 +17,7 @@ import { DiretiveComponent } from "./diretive/diretive.component";
 import { GridComponent } from "./grid/grid.component";
 import { ArrayMethodsComponent } from "./array-methods/array-methods.component";
 import { routes } from "./shared/uitlities/routes";
+import { authGuard } from "./shared/guards/auth.guard";
 
 const routesPaths: Routes = [
     {
@@ -55,7 +56,8 @@ const routesPaths: Routes = [
     {
         title: routes.array_methods.title,
         path: routes.array_methods.path,
-        component: ArrayMethodsComponent
+        component: ArrayMethodsComponent,
+        canActivate: [authGuard]
     },
     {
         // student/anything

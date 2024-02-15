@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-slider/ngx-slider": "^2.0.1",
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
@@ -20,8 +21,12 @@
     "@angular/router": "^16.2.0",
     "country-codes-list": "^1.6.11",
     "intl-tel-input": "^17.0.3",
+    "jspdf": "^2.5.1",
     "ng-image-slider": "^7.0.1",
     "ng-otp-input": "^1.9.3",
+    "ngx-editor": "^16.0.1",
+    "ngx-slider": "^0.0.5",
+    "pdfjs-dist": "^4.0.379",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -31,6 +36,7 @@
     "@angular/cli": "~16.2.0",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",
+    "electron": "^28.2.2",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

@@ -8,7 +8,7 @@ import { TeacherModule } from './teacher/teacher.module';
 import { IfElseComponent } from './if-else/if-else.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgModelComponent } from './ng-model/ng-model.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SignupComponent } from './signup/signup.component';
@@ -34,6 +34,8 @@ import { SearchPipe } from './shared/pipes/search.pipe';
 import { DiretiveComponent } from './diretive/diretive.component';
 import { GridComponent } from './grid/grid.component';
 import { ArrayMethodsComponent } from './array-methods/array-methods.component';
+import { NgxEditorModule } from 'ngx-editor';
+// import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,7 @@ import { ArrayMethodsComponent } from './array-methods/array-methods.component';
     DiretiveComponent,
     GridComponent,
     ArrayMethodsComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -71,7 +74,10 @@ import { ArrayMethodsComponent } from './array-methods/array-methods.component';
     AppRoutingModule,
     NgOtpInputModule,
     NgImageSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgxEditorModule
+    // NgxSliderModule
   ],
   providers: [
     DecimalPipe

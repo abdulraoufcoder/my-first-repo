@@ -8,10 +8,11 @@ export class CommaPipe implements PipeTransform {
 
   constructor(private decimalPipe: DecimalPipe){}
 
-  transform(value: any): any {
+  transform(value: string): any {
     // Use Angular's DecimalPipe to format the number with commas
-    const val = this.decimalPipe.transform(value)
-    return val
+    // const val = this.decimalPipe.transform(value)
+
+    return value.length
   }
 }
 
