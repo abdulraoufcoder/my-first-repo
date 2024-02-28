@@ -1,45 +1,14 @@
 
-<h1>{{'asfasdfk trdgs sdfg' | uppercase}}</h1>
-<h1>{{'asfasdfk SDFGDF sdfg' | lowercase}}</h1>
+<input type="text" #myInput>
 
-<br><br>
-
-<h1>{{date | date: 'mediumTime'}}</h1>
-
-<h1>{{12 | number : '1.3-3'}}</h1>
-
-<h1>{{jsonObj | json}}</h1>
-
-<br><br>
-
-<select name="" id="" (change)="valueSelected(selectBox.value)" #selectBox>
-    <option value="{{opt.value}}" *ngFor="let opt of arr2 | slice">{{opt.title}}</option>
+<select name="" id="" #name>
+    <option value="Ali">Ali</option>
+    <option value="Asad">Asad</option>
+    <option value="Ahad">Ahad</option>
 </select>
 
-<br><br>
-
-<select name="" id="" (change)="valueSelected(selectBox2.value)" #selectBox2>
-    <option value="{{opt}}" *ngFor="let opt of arr">{{opt | stringSeparator | titlecase}}</option>
+<select name="" id="" #color>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
 </select>
-
-<br><br>
-
-<h1>{{'246546334' | comma}}</h1>
-
-
-
-<input type="text" [(ngModel)]="searchValue">
-<table>
-    <tr *ngFor="let item of arr2 | search: searchValue ">
-    <td  style="padding-block: 0.25em;">{{item.title}}</td>
-    <td  style="padding-block: 0.25em;">{{item.value}}</td>
-    </tr>
-</table>
-
-
-
-<textarea name="" [(ngModel)]="textarea" id="" cols="30" rows="10"></textarea>
-{{textarea}}
-
-
-<!-- <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider> -->
